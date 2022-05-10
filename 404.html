@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="is-smooth-scroll-compatible is-loading" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Geger | always best.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#D4C9C9">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://discord.gg/jnwaxtWxQc">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image"
+        content="https://cdn.discordapp.com/attachments/897057238148067349/901840915155546172/20211024_173322.jpg">
+    <meta property="og:site_name" content="GEGER | ALWAYS BEST.">
+    <meta property="og:title" content="Discord server">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144274538-1"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cursor.css">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144274538-1');
+    </script>
+</head>
+
+<body>
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+
+        <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+
+    <div class="o-scroll" id="js-scroll" data-scroll-container>
+        <!-- <section data-scroll-section> -->
+        <!-- <div class="o-container"> -->
+        <!-- <div class="c-damn"> -->
+        <h1 class="o-title NeueMontreal" data-scroll>
+            <span class="o-title_line">
+                <span style="font-family: Whitney;">
+                    404
+                </span>
+            </span>
+            <span class="o-title_line">
+                <span>
+                    Error,
+                </span>
+            </span>
+            <span class="o-title_line">
+                <span>
+                    suck <a href="https://zippw.github.io/geger" class="hoverable o-link -underline">this</a>
+                </span>
+            </span>
+            <span class="o-title_line u-white">
+                <span>
+                    dick
+                </span>
+            </span>
+        </h1>
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </section> -->
+
+    </div>
+
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+        crossorigin="anonymous"></script>
+    <script nomodule
+        src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+        crossorigin="anonymous"></script>
+
+    <script src="dist/scripts/main.js"></script>
+    <script src="tweenmax.min..js"></script>
+    <script>const $bigBall = document.querySelector('.cursor__ball--big');
+        const $smallBall = document.querySelector('.cursor__ball--small');
+        const $hoverables = document.querySelectorAll('.hoverable');
+
+        // Listeners
+        document.body.addEventListener('mousemove', onMouseMove);
+        for (let i = 0; i < $hoverables.length; i++) {
+            $hoverables[i].addEventListener('mouseenter', onMouseHover);
+            $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+        }
+
+        // Move the cursor
+        function onMouseMove(e) {
+            TweenMax.to($bigBall, .4, {
+                x: e.pageX - 15,
+                y: e.pageY - 15
+            })
+            TweenMax.to($smallBall, .1, {
+                x: e.pageX - 5,
+                y: e.pageY - 7
+            })
+        }
+
+        // Hover an element
+        function onMouseHover() {
+            TweenMax.to($bigBall, .3, {
+                scale: 10
+            })
+        }
+        function onMouseHoverOut() {
+            TweenMax.to($bigBall, .3, {
+                scale: 1
+            })
+        };
+    </script>
+
+
+</html>
